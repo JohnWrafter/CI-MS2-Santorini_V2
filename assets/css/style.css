@@ -122,11 +122,21 @@ body {
         serif;
 }
 
+.heading-secondary {
+    font-size: 22px;
+    line-height: 1.2;
+    padding-top: 2.4rem;
+    margin-bottom: 2.4rem;
+    font-family: 'Source Sans Pro',
+        sans-serif;
+
+}
+
 .heading-primary,
 .heading-secondary,
 .heading-tertiary {
     font-weight: 700;
-    color: #333;
+    color: #000;
     /* color: #45260a; */
     /* color: #343a40; */
     letter-spacing: -0.5px;
