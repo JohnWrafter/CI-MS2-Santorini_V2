@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap');
 
 * {
     padding: 0;
@@ -102,4 +103,52 @@ body {
 
 .section-resorts {
     background-color: #F0F8FF;
+}
+
+/**************************/
+/* HERO SECTION */
+/**************************/
+
+.section-hero {
+    /* background-color: #fdf2e9; */
+    padding: 4.8rem 0 9.6rem 0;
+}
+
+.heading-primary {
+    font-size: 5.2rem;
+    line-height: 1.05;
+    margin-bottom: 3.2rem;
+    font-family: 'Crete Round',
+        serif;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+    font-weight: 700;
+    color: #333;
+    /* color: #45260a; */
+    /* color: #343a40; */
+    letter-spacing: -0.5px;
+}
+
+.hero {
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 9.6rem;
+    align-items: center;
+}
+
+.hero-description {
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-bottom: 4.8rem;
+}
+
+.hero-img {
+    width: 100%;
+    border-radius: 5px;
 }
