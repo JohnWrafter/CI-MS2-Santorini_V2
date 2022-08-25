@@ -183,6 +183,28 @@ body {
     box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
 }
 
+.fa-pull-left {
+    margin-left: 5rem;
+}
+
+.fa-solid {
+    color: orange;
+    font-size: 28px;
+}
+
+.fa-border {
+    border-color: var(--fa-border-color, orange);
+    border-radius: var(--fa-border-radius, 5px);
+}
+
+.fa-ul {
+    list-style-type: none;
+    margin-left: var(--fa-li-margin, 8em);
+    padding-left: 0;
+    line-height: 6;
+}
+
+
 /**************************/
 /* WEATHER SECTION */
 /**************************/
