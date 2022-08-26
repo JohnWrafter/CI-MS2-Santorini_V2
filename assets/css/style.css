@@ -193,8 +193,10 @@ body {
 }
 
 .fa-border {
-    border-color: var(--fa-border-color, orange);
-    border-radius: var(--fa-border-radius, 5px);
+    border-radius: var(--fa-border-radius, .1em);
+    border: var(--fa-border-width, .08em) var(--fa-border-style, solid) var(--fa-border-color, orange);
+    padding: var(--fa-border-padding, .2em .25em .15em);
+    border-radius: var(--fa-border-radius, 10px);
 }
 
 .fa-ul {
