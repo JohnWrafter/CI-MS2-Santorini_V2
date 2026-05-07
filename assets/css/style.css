@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 * {
     padding: 0;
@@ -17,8 +19,8 @@ html {
 }
 
 body {
-    font-family: "Rubik", sans-serif;
-    line-height: 1;
+    font-family: "Lora", serif;
+    line-height: 1.6;
     font-weight: 400;
     color: #555;
     overflow-x: hidden;
@@ -33,11 +35,12 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #001D61;
-
-    /* Because we want header to be sticky later */
     height: 9.6rem;
     padding: 0 4.8rem;
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
 }
 
 /**************************/
@@ -46,6 +49,36 @@ body {
 
 .logo {
     height: 2.2rem;
+}
+
+.logo-link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: #e67e22;
+    font-size: 2.4rem;
+    font-weight: 800;
+    font-family: "Playfair Display", serif;
+    transition: all 0.3s;
+}
+
+.logo-brand:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.logo-brand i {
+    font-size: 2.8rem;
+}
+
+.brand-name {
+    letter-spacing: 0.5px;
 }
 
 .main-nav-list {
@@ -60,22 +93,44 @@ body {
     display: inline-block;
     text-decoration: none;
     color: #ACD7F6;
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 1.8rem;
     transition: all 0.3s;
+    position: relative;
+    padding-bottom: 0.4rem;
+}
+
+.main-nav-link:link::after,
+.main-nav-link:visited::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #e67e22;
+    transition: width 0.3s;
+}
+
+.main-nav-link:hover::after,
+.main-nav-link:active::after {
+    width: 100%;
 }
 
 .main-nav-link:hover,
 .main-nav-link:active {
-    color: red;
+    color: #e67e22;
 }
 
 .main-nav-link.nav-cta:link,
 .main-nav-link.nav-cta:visited {
     padding: 1.2rem 2.4rem;
+    padding-bottom: 1.2rem;
     border-radius: 9px;
     color: #fff;
     background-color: #e67e22;
+    border: 2px solid #e67e22;
 }
 
 .main-nav-link.nav-cta:hover,
@@ -93,12 +148,14 @@ body {
 
 .card-title {
     font-size: 2.2rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
 }
 
 .card-text {
-    font-family: 'Source Sans Pro',
-        sans-serif;
-    font-size: 2.0rem;
+    font-family: "Lora", serif;
+    font-size: 1.6rem;
+    line-height: 1.6;
 }
 
 /* .section-resorts {
@@ -116,19 +173,19 @@ body {
 
 .heading-primary {
     font-size: 5.2rem;
-    line-height: 1.05;
+    line-height: 1.1;
     margin-bottom: 3.2rem;
-    font-family: 'Crete Round',
-        serif;
+    font-family: "Playfair Display", serif;
+    font-weight: 800;
 }
 
 .heading-secondary {
-    font-size: 22px;
-    line-height: 1.2;
+    font-size: 2.8rem;
+    line-height: 1.3;
     padding-top: 2.4rem;
     margin-bottom: 2.4rem;
-    font-family: 'Source Sans Pro',
-        sans-serif;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
 
 }
 
@@ -137,8 +194,6 @@ body {
 .heading-tertiary {
     font-weight: 700;
     color: #000;
-    /* color: #45260a; */
-    /* color: #343a40; */
     letter-spacing: -0.5px;
 }
 
@@ -153,14 +208,21 @@ body {
 }
 
 .hero-description {
-    font-size: 2rem;
-    line-height: 1.6;
+    font-size: 1.8rem;
+    line-height: 1.8;
     margin-bottom: 4.8rem;
+    font-family: "Lora", serif;
 }
 
 .hero-img {
     width: 100%;
     border-radius: 5px;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.hero-img:hover {
+    transform: scale(1.02);
 }
 
 /**************************/
@@ -176,6 +238,7 @@ body {
     border-radius: 11px;
     overflow: hidden;
     transition: all 0.4s;
+    border-top: 5px solid #e67e22;
 }
 
 .resorts:hover {
@@ -208,10 +271,353 @@ body {
 
 
 /**************************/
+/* MOBILE NAVIGATION */
+/**************************/
+
+.btn-mobile-nav {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: none;
+    font-size: 2.4rem;
+    color: #ACD7F6;
+}
+
+.icon-mobile-nav {
+    height: 4.8rem;
+    width: 4.8rem;
+    display: none;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+    display: none;
+}
+
+/**************************/
 /* WEATHER SECTION */
 /**************************/
 
 .section-weather {
     background-color: #f0f8ff;
     padding: 4.8rem 0 9.6rem 0;
+}
+
+/**************************/
+/* PLACES TO STAY SECTION */
+/**************************/
+
+.section-stays {
+    padding: 4.8rem 0 9.6rem 0;
+    background-color: #fff;
+}
+
+/**************************/
+/* ACTIVITIES SECTION */
+/**************************/
+
+.section-activities {
+    padding: 4.8rem 0 9.6rem 0;
+    background-color: #f0f8ff;
+}
+
+/**************************/
+/* MAP SECTION */
+/**************************/
+
+.section-map {
+    padding: 4.8rem 0 9.6rem 0;
+    background-color: #fff;
+}
+
+/**************************/
+/* FOOTER */
+/**************************/
+
+.footer {
+    background-color: #001D61;
+    color: #ACD7F6;
+}
+
+.footer h5 {
+    color: #fff;
+    margin-bottom: 1.6rem;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+}
+
+.footer a {
+    color: #ACD7F6;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
+.footer ul li {
+    margin-bottom: 0.8rem;
+}
+
+/**************************/
+/* BUTTON STYLES */
+/**************************/
+
+.btn-primary {
+    background-color: #e67e22;
+    color: #fff;
+    padding: 1.2rem 2.4rem;
+    border-radius: 9px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: #cf711f;
+    color: #fff;
+}
+
+/**************************/
+/* TESTIMONIALS SECTION */
+/**************************/
+
+.section-testimonials {
+    padding: 4.8rem 0 9.6rem 0;
+    background-color: #fff;
+}
+
+.testimonial-card {
+    background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+    padding: 2.4rem;
+    border-radius: 11px;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    text-align: center;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-0.8rem);
+    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.15);
+}
+
+.stars {
+    color: #ffc107;
+    font-size: 1.4rem;
+    margin-bottom: 1.6rem;
+    letter-spacing: 0.3rem;
+}
+
+.testimonial-text {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    margin-bottom: 1.6rem;
+    font-style: italic;
+    color: #555;
+    font-family: "Lora", serif;
+}
+
+.testimonial-author {
+    font-size: 1.4rem;
+    color: #001D61;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+}
+
+/**************************/
+/* BEST TIME SECTION */
+/**************************/
+
+.section-best-time {
+    padding: 4.8rem 0 9.6rem 0;
+    background-color: #f0f8ff;
+}
+
+.season-card {
+    background: #fff;
+    padding: 2.4rem;
+    border-radius: 11px;
+    border-left: 4px solid #e67e22;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+    transition: all 0.3s;
+}
+
+.season-card:hover {
+    transform: translateX(0.8rem);
+    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.1);
+}
+
+.season-card h5 {
+    color: #001D61;
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+}
+
+.season-card i {
+    margin-right: 0.8rem;
+    color: #e67e22;
+}
+
+.season-card p {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+    font-family: "Lora", serif;
+}
+
+/**************************/
+/* TRAVEL TIPS SECTION */
+/**************************/
+
+.section-travel-tips {
+    padding: 4.8rem 0 9.6rem 0;
+    background-color: #fff;
+}
+
+.tip-card {
+    background: #f9f9f9;
+    padding: 2.4rem;
+    border-radius: 11px;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+    transition: all 0.3s;
+    border-top: 3px solid #e67e22;
+}
+
+.tip-card:hover {
+    transform: translateY(-0.8rem);
+    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.1);
+}
+
+.tip-card h5 {
+    color: #001D61;
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+}
+
+.tip-card i {
+    margin-right: 0.8rem;
+    color: #e67e22;
+    font-size: 2rem;
+}
+
+.tip-card p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: #555;
+    font-family: "Lora", serif;
+}
+
+/**************************/
+/* FAQ SECTION */
+/**************************/
+
+.section-faq {
+    padding: 4.8rem 0 9.6rem 0;
+    background-color: #f0f8ff;
+}
+
+.faq-item {
+    margin-bottom: 2.4rem;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 11px;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+    transition: all 0.3s;
+}
+
+.faq-item:hover {
+    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+    color: #001D61;
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: "Raleway", sans-serif;
+}
+
+.faq-question i {
+    margin-right: 0.8rem;
+    color: #e67e22;
+}
+
+.faq-item p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: #555;
+    margin: 0;
+    font-family: "Lora", serif;
+}
+
+/**************************/
+/* RESPONSIVE QUERIES */
+/**************************/
+
+@media (max-width: 44em) {
+    .btn-mobile-nav {
+        display: block;
+        z-index: 9999;
+    }
+
+    .main-nav {
+        position: absolute;
+        top: 9.6rem;
+        left: 0;
+        width: 100%;
+        background-color: #001D61;
+        transform: translateX(100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .main-nav.nav-open {
+        transform: translateX(0);
+    }
+
+    .main-nav-list {
+        flex-direction: column;
+        gap: 4.8rem;
+        padding: 4.8rem 0;
+    }
+
+    .nav-open .icon-mobile-nav[name="close-outline"] {
+        display: block;
+    }
+
+    .nav-open .icon-mobile-nav[name="menu-outline"] {
+        display: none;
+    }
+
+    .heading-primary {
+        font-size: 3.6rem;
+    }
+
+    .header {
+        padding: 0 2.4rem;
+        height: 7.2rem;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 4.8rem;
+        padding: 0 1.6rem;
+    }
+
+    .fa-ul {
+        margin-left: var(--fa-li-margin, 6em);
+    }
+
+    .fa-pull-left {
+        margin-left: 2rem;
+    }
 }

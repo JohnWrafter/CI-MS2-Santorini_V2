@@ -1,31 +1,34 @@
-fa-border
 <!doctype html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Santorini</title>
+    <meta name="description" content="Discover Santorini, one of Greece's most romantic islands. Explore stunning resorts, activities, weather, and travel guide for your perfect vacation.">
+    <title>Santorini - Greece's Most Romantic Island</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css" />
     <script src="https://kit.fontawesome.com/a985752e7d.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 </head>
 
 <body>
     <header class="header">
-        <a href="#">
-            <!-- <img class="logo" alt="Omnifood logo" src="img/omnifood-logo.png" /> -->
+        <a href="#" class="logo-link">
+            <div class="logo-brand">
+                <i class="fa-solid fa-sun"></i>
+                <span class="brand-name">Santorini</span>
+            </div>
         </a>
         <nav class="main-nav">
             <ul class="main-nav-list">
-                <li><a class="main-nav-link" href="#how">About</a></li>
-                <li><a class="main-nav-link" href="#meals">Resorts</a></li>
-                <li>
-                    <a class="main-nav-link" href="#testimonials">Places to stay</a>
-                </li>
-                <li><a class="main-nav-link" href="#pricing">Things to do</a></li>
-                <li><a class="main-nav-link" href="#cta">Map</a>
+                <li><a class="main-nav-link" href="#resorts">Resorts</a></li>
+                <li><a class="main-nav-link" href="#stays">Places to Stay</a></li>
+                <li><a class="main-nav-link" href="#activities">Things to Do</a></li>
+                <li><a class="main-nav-link" href="#testimonials">Reviews</a></li>
+                <li><a class="main-nav-link" href="#best-time">Best Time</a></li>
+                <li><a class="main-nav-link nav-cta" href="#map">Plan Visit</a></li>
             </ul>
         </nav>
         <button class="btn-mobile-nav">
@@ -36,7 +39,7 @@ fa-border
     <main>
 
         <section class="section-hero">
-            <div class="col-sm">
+            <div class="container">
                 <div class="hero">
                     <div class="hero-text-box">
                         <h1 class="heading-primary">
@@ -49,34 +52,17 @@ fa-border
                             belongs to Cyclades, the most well-known Greek group of islands with the characteristic
                             whitewashed villages near the blue sea.
                         </p>
+                        <a href="#resorts" class="btn btn-primary">Explore Resorts</a>
                     </div>
-
-                    <!-- <a href="#cta" class="btn btn--full margin-right-sm">Start eating well</a>
-                    <a href="#how" class="btn btn--outline">Learn more &darr;</a>
-                    <div class="delivered-meals">
-                        <div class="delivered-imgs">
-                            <img src="img/customers/customer-1.jpg" alt="Customer photo" />
-                            <img src="img/customers/customer-2.jpg" alt="Customer photo" />
-                            <img src="img/customers/customer-3.jpg" alt="Customer photo" />
-                            <img src="img/customers/customer-4.jpg" alt="Customer photo" />
-                            <img src="img/customers/customer-5.jpg" alt="Customer photo" />
-                            <img src="img/customers/customer-6.jpg" alt="Customer photo" />
-                        </div>
-                        <p class="delivered-text">
-                            <span>250,000+</span> meals delivered last year!
-                        </p>
-                    </div>
-                </div> -->
-                    <div class="col-sm">
-                        <div class="hero-img-box">
-                            <img src="https://a.cdn-hotels.com/gdcs/production44/d1343/1ca674e4-7310-485e-9b28-92636e7d5ac1.jpg"
-                                class="hero-img"
-                                alt="Woman enjoying food, meals in storage container, and food bowls on a table" />
-                        </div>
+                    <div class="hero-img-box">
+                        <img src="assets/img/kamari-hero1.jpg"
+                            class="hero-img"
+                            alt="Stunning view of Santorini's Kamari beach with crystal blue waters and white buildings" />
                     </div>
                 </div>
+            </div>
         </section>
-        <section class="section-resorts">
+        <section class="section-resorts" id="resorts">
             <div class="container text-center">
                 <h2 class="heading-secondary text-start text-uppercase">Santorini Holiday Resorts</h2>
 
@@ -84,7 +70,7 @@ fa-border
                     <div class="resorts">
                         <div class="col">
                             <div class="card border-light mb-3">
-                                <img src="assets/img/kamari.jpg" class="card-img-top" alt="Hackney Empire" />
+                                <img src="assets/img/kamari.jpg" class="card-img-top" alt="Kamari beach village" />
                                 <div class="card-body">
                                     <h5 class="card-title text-start">Kamari</h5>
                                     <p class="card-text text-start">Kamari is a seaside village, situated on the
@@ -96,28 +82,28 @@ fa-border
                                         comes from a small arch, which was part of an ancient sanctuary dedicated to
                                         Poseidon, standing on the south end of the beach.
                                     </p>
+                                    <ul class="fa-ul">
+                                        <li><span class="fa-li"><i
+                                                    class="fa-solid fa-umbrella-beach fa-pull-left fa-border"></i></span>Easy
+                                            Access To Beach
+                                        </li>
+                                        <li><span class="fa-li"><i
+                                                    class="fa-solid fa-utensils fa-pull-left fa-border"></i></span>Great
+                                            Restaurants
+                                        </li>
+                                        <li><span class="fa-li"><i
+                                                    class="fa-solid fa-martini-glass fa-pull-left fa-border"></i></span>Great
+                                            Bars
+                                        </li>
+                                    </ul>
                                 </div>
-                                <ul class="fa-ul">
-                                    <li><span class="fa-li"><i
-                                                class="fa-solid fa-umbrella-beach fa-pull-left fa-border"></i></span>Easy
-                                        Access To Beach
-                                    </li>
-                                    <li><span class="fa-li"><i
-                                                class="fa-solid fas fa-utensils fa-pull-left fa-border"></i></span>Great
-                                        Restaurants
-                                    </li>
-                                    <li><span class="fa-li"><i
-                                                class="fa-solid fa-martini-glass fa-pull-left fa-border"></i></span>Great
-                                        Bars
-                                    </li>
-                                </ul>
                             </div>
                         </div>
                     </div>
                     <div class="resorts">
                         <div class="col">
                             <div class="card border-light mb-3">
-                                <img src="assets/img/oia.jpg" class="card-img-top" alt="First Direct Arena" />
+                                <img src="assets/img/oia.jpg" class="card-img-top" alt="Oia village with blue domes" />
                                 <div class="card-body">
                                     <h5 class="card-title text-start">Oia</h5>
                                     <p class="card-text text-start">In Oia you can stroll in the charming narrow paths,
@@ -129,25 +115,25 @@ fa-border
                                         with local food. You can also swim there, in wonderful crystal waters with the
                                         breathtaking caldera view above you.
                                     </p>
+                                    <ul class="fa-ul">
+                                        <li><span class="fa-li"><i
+                                                    class="fa-solid fa-cable-car fa-pull-left fa-border"></i></span>Cable Car
+                                        </li>
+                                        <li><span class="fa-li"><i
+                                                    class="fa-solid fa-landmark fa-pull-left fa-border"></i></span>Blue Domes
+                                        </li>
+                                        <li><span class="fa-li"><i class="fa-solid fa-hotel fa-pull-left fa-border"></i></span>Great
+                                            Hotels
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-                        <ul class="fa-ul">
-                            <li><span class="fa-li"><i
-                                        class="fa-solid fa-cable-car fa-pull-left fa-border"></i></span>Cable Car
-                            </li>
-                            <li><span class="fa-li"><i
-                                        class="fa-solid fas fa-landmark fa-pull-left fa-border"></i></span>Blue Domes
-                            </li>
-                            <li><span class="fa-li"><i class="fa-solid fa-hotel fa-pull-left fa-border"></i></span>Great
-                                Hotels
-                            </li>
-                        </ul>
                     </div>
                     <div class="resorts">
                         <div class="col">
                             <div class="card border-light mb-3">
-                                <img src="assets/img/imerovigli.jpg" class="card-img-top" alt="The SSE Hydro" />
+                                <img src="assets/img/imerovigli.jpg" class="card-img-top" alt="Imerovigli village" />
                                 <div class="card-body">
                                     <h5 class="card-title text-start">Imerovigli</h5>
                                     <p class="card-text text-start">Imerovigli is an ideal choice for a private,
@@ -155,29 +141,24 @@ fa-border
                                         holiday
                                         filled with tranquility. It forms an impressive scenery of whitewashed houses,
                                         flowers and cobblestone alleys. You can wander through the peaceful, paved paths
-                                        away from the hustle and the bustle. It promises priceless, relaxing moments and
+                                        away from the hustle and the bustle. Enjoy relaxing moments and
                                         a
                                         view you cannot resist. Here you can unwind in the traditional taverns.</p>
+                                    <ul class="fa-ul">
+                                        <li><span class="fa-li"><i
+                                                    class="fa-solid fa-sun fa-pull-left fa-border"></i></span>Sunshine
+                                        </li>
+                                        <li><span class="fa-li"><i
+                                                    class="fa-solid fa-person-hiking fa-pull-left fa-border"></i></span>Hiking
+                                        </li>
+                                        <li><span class="fa-li"><i
+                                                    class="fa-solid fa-hotel fa-pull-left fa-border"></i></span>Great
+                                            Hotels
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-
-
-                        <ul class="fa-ul">
-                            <li><span class="fa-li"><i
-                                        class="fa-solid fa-sun fa-pull-left fa-border"></i></span>Sunshine
-                            </li>
-                            <li><span class="fa-li"><i
-                                        class="fa-solid fas fa-person-biking fa-pull-left fa-border"></i></span>Blue
-                                Domes
-                            </li>
-                            <li><span class="fa-li"><i
-                                        class="fa-solid fa-cart-shopping fa-pull-left fa-border"></i></span>Great
-                                Hotels
-                            </li>
-                        </ul>
-
-
                     </div>
                 </div>
             </div>
@@ -203,18 +184,313 @@ fa-border
                 </script>
             </div>
         </section>
-        <section>
-            <h1>Places To Stay</h1>
-
+        <section class="section-stays" id="stays">
+            <div class="container">
+                <h2 class="heading-secondary text-uppercase">Places To Stay</h2>
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fa-solid fa-hotel"></i> Luxury Hotels</h5>
+                                <p class="card-text">Experience world-class amenities and stunning caldera views. Perfect for a romantic getaway with fine dining and spa services.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fa-solid fa-home"></i> Traditional Villas</h5>
+                                <p class="card-text">Stay in authentic Cycladic architecture with whitewashed walls and blue domed roofs. Charming and intimate accommodations.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fa-solid fa-person-hiking"></i> Budget Guesthouses</h5>
+                                <p class="card-text">Affordable options with local charm. Great for travelers looking for a more authentic and budget-friendly experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fa-solid fa-wine-glass"></i> Boutique Apartments</h5>
+                                <p class="card-text">Modern, stylish accommodations with a personal touch. Perfect for couples and small groups seeking comfort and character.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section>
-            <h1>Things To Do</h1>
+        <section class="section-activities" id="activities">
+            <div class="container">
+                <h2 class="heading-secondary text-uppercase">Things To Do</h2>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fa-solid fa-water"></i> Sailing & Water Sports</h5>
+                                <p class="card-text">Explore the Aegean Sea with boat tours, windsurfing, and swimming. Visit the volcanic islands and hot springs.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fa-solid fa-sun"></i> Sunset Viewing</h5>
+                                <p class="card-text">Witness the world-famous Santorini sunset from Oia or other scenic viewpoints. An unforgettable experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fa-solid fa-wine-bottle"></i> Wine Tasting</h5>
+                                <p class="card-text">Sample local volcanic wines at traditional wineries. Learn about Santorini's unique wine production.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fa-solid fa-mountain-sun"></i> Hiking Trails</h5>
+                                <p class="card-text">Trek through scenic caldera trails with panoramic views. Explore ancient villages and volcanic landscapes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fa-solid fa-camera"></i> Photography Tours</h5>
+                                <p class="card-text">Capture stunning photos of whitewashed villages, blue domes, and breathtaking sea views.All tours are led by professional photographers.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fa-solid fa-utensils"></i> Culinary Tours</h5>
+                                <p class="card-text">Experience authentic Greek cuisine with cooking classes and food tours featuring local specialties. All tours are led by professional chefs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section>Map</section>
+        <section class="section-testimonials" id="testimonials">
+            <div class="container">
+                <h2 class="heading-secondary text-uppercase text-center mb-5">What Visitors Say</h2>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="testimonial-card">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"Santorini exceeded all my expectations! The sunsets are absolutely breathtaking, and the hospitality of the locals is wonderful. Highly recommend!"</p>
+                            <p class="testimonial-author"><strong>Sarah Mitchell</strong> - USA</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="testimonial-card">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"The food, the views, the people - everything about Santorini is magical. We had our honeymoon here and it was perfect. We're already planning our return!"</p>
+                            <p class="testimonial-author"><strong>Marcus & Elena</strong> - Germany</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="testimonial-card">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"An unforgettable experience! From the iconic blue domes to the volcanic beaches, every moment in Santorini is Instagram-worthy. Worth every penny!"</p>
+                            <p class="testimonial-author"><strong>James Chen</strong> - Singapore</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-best-time" id="best-time">
+            <div class="container">
+                <h2 class="heading-secondary text-uppercase text-center mb-5">Best Time to Visit</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="season-card">
+                            <h5><i class="fa-solid fa-flower"></i> Spring (April-May)</h5>
+                            <p><strong>Temperature:</strong> 20-25°C (68-77°F)</p>
+                            <p><strong>Why Visit:</strong> Mild weather, fewer crowds, flowers in bloom, perfect for hiking and exploring.</p>
+                            <p class="text-muted">Best for: Budget travelers, photographers, nature lovers</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="season-card">
+                            <h5><i class="fa-solid fa-sun"></i> Summer (June-August)</h5>
+                            <p><strong>Temperature:</strong> 28-32°C (82-90°F)</p>
+                            <p><strong>Why Visit:</strong> Sunny days, vibrant nightlife, water sports, peak diving season.</p>
+                            <p class="text-muted">Best for: Beach lovers, party-goers, water sports enthusiasts</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="season-card">
+                            <h5><i class="fa-solid fa-leaf"></i> Fall (September-October)</h5>
+                            <p><strong>Temperature:</strong> 22-27°C (72-81°F)</p>
+                            <p><strong>Why Visit:</strong> Great weather continues, harvest season begins, fewer tourists.</p>
+                            <p class="text-muted">Best for: Wine enthusiasts, romantic couples, travelers seeking balance</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="season-card">
+                            <h5><i class="fa-solid fa-snowflake"></i> Winter (November-March)</h5>
+                            <p><strong>Temperature:</strong> 14-18°C (57-64°F)</p>
+                            <p><strong>Why Visit:</strong> Peaceful atmosphere, local experience, budget deals.</p>
+                            <p class="text-muted">Best for: Solo travelers, budget seekers, those wanting authentic local life</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-travel-tips" id="travel-tips">
+            <div class="container">
+                <h2 class="heading-secondary text-uppercase text-center mb-5">Travel Tips & Essentials</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="tip-card">
+                            <h5><i class="fa-solid fa-plane"></i> Getting There</h5>
+                            <p>Santorini has its own airport with direct flights from Athens and other European cities. Ferries are also available. The port is in Athinios Bay with shuttle buses connecting to various villages.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="tip-card">
+                            <h5><i class="fa-solid fa-bus"></i> Local Transport</h5>
+                            <p>Buses are affordable and reliable. Rent a car or ATV for flexibility exploring the island. Taxis are available but more expensive. Walking is best within villages.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="tip-card">
+                            <h5><i class="fa-solid fa-wallet"></i> Money & Essentials</h5>
+                            <p>Currency is Euro (€). ATMs are available in main towns. Credit cards widely accepted in tourist areas. Bring sunscreen (UV is intense), comfortable shoes for cobblestone streets, and a hat.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="tip-card">
+                            <h5><i class="fa-solid fa-language"></i> Language & Culture</h5>
+                            <p>Greek is the official language, but English is spoken in tourist areas. Locals appreciate efforts to speak Greek. dress modestly in villages and Orthodox churches. Respect local customs and traditions.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="tip-card">
+                            <h5><i class="fa-solid fa-utensils"></i> Food & Dining</h5>
+                            <p>Try local specialties: fava, saganaki, fresh seafood, and local wines. Eat where locals eat for authentic experiences. Dinner typically starts later (8-9pm). Tipping is appreciated but not required.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="tip-card">
+                            <h5><i class="fa-solid fa-calendar"></i> Booking Accommodations</h5>
+                            <p>Book early for peak seasons (June-August). Look for stays in local neighborhoods like Kamari or Perivolos for authentic experience. Negotiate rates during off-season visits.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-faq" id="faq">
+            <div class="container">
+                <h2 class="heading-secondary text-uppercase text-center mb-5">Frequently Asked Questions</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="faq-item">
+                            <h5 class="faq-question"><i class="fa-solid fa-question"></i> How long should I stay in Santorini?</h5>
+                            <p>3-5 days is ideal to explore the main villages, relax on beaches, and enjoy activities. If you want a slower pace or island-hopping, consider 7+ days.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h5 class="faq-question"><i class="fa-solid fa-question"></i> Is Santorini expensive?</h5>
+                            <p>It's pricier than mainland Greece but manageable with a budget. Eat at local tavernas, stay in traditional villages, and visit in shoulder seasons to save money.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h5 class="faq-question"><i class="fa-solid fa-question"></i> Can I do a day trip to Santorini?</h5>
+                            <p>Yes, but not recommended. A day trip is rushed. Stay overnight to experience the sunset and evening atmosphere that make Santorini special.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="faq-item">
+                            <h5 class="faq-question"><i class="fa-solid fa-question"></i> What's the best beach in Santorini?</h5>
+                            <p>Kamari and Perivolos offer long sandy beaches. For unique volcanic sand, try Amoudi Bay. Red and Black beaches near Akrotiri have dramatic landscapes.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h5 class="faq-question"><i class="fa-solid fa-question"></i> Is travel insurance necessary?</h5>
+                            <p>Highly recommended, especially for activities like hiking, sailing, or water sports. Medical care is good but can be expensive for tourists.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h5 class="faq-question"><i class="fa-solid fa-question"></i> Can I see the sunset from Oia?</h5>
+                            <p>Yes, but it gets very crowded in summer. Arrive 2-3 hours early or visit other spots like Firostefani or Imerovigli for equally stunning sunsets with fewer crowds.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-map" id="map">
+            <div class="container">
+                <h2 class="heading-secondary text-uppercase">Location Map</h2>
+                <p class="text-center mb-4">Santorini is located in the southern Aegean Sea at coordinates 36.42°N 25.43°E</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94255.59045460944!2d25.365000000000002!3d36.42!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1498e7e0e7e7e7e7%3A0x7e7e7e7e7e7e7e7e!2sSantorini!5e0!3m2!1sen!2sgr!4v123456789" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
     </main>
-    <footer>Footer</footer>
+    <footer class="footer">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-md-4">
+                    <h5>About Santorini</h5>
+                    <p>Explore the stunning island of Santorini, Greece's most romantic destination with extraordinary sunsets and Cycladic beauty.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#resorts">Resorts</a></li>
+                        <li><a href="#stays">Places to Stay</a></li>
+                        <li><a href="#activities">Things to Do</a></li>
+                        <li><a href="#testimonials">Reviews</a></li>
+                        <li><a href="#best-time">Best Time</a></li>
+                        <li><a href="#travel-tips">Travel Tips</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#map">Map</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <p>
+                        <a href="#" class="me-3"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="me-3"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="me-3"><i class="fa-brands fa-twitter"></i></a>
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center py-3">
+                <p>&copy; 2024 Santorini Travel Guide. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
+    <script>
+        // Mobile menu toggle
+        const btnMobileNav = document.querySelector(".btn-mobile-nav");
+        const headerNav = document.querySelector(".main-nav");
+
+        btnMobileNav.addEventListener("click", function() {
+            headerNav.classList.toggle("nav-open");
+        });
+
+        // Close mobile menu when a link is clicked
+        const navLinks = document.querySelectorAll(".main-nav-link");
+        navLinks.forEach(link => {
+            link.addEventListener("click", function() {
+                headerNav.classList.remove("nav-open");
+            });
+        });
     </script>
 </body>
 
