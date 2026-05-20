@@ -477,7 +477,14 @@
             headerNav.classList.toggle("nav-open");
         });
 
-    <script src="assets/js/script.js"></script>
+        // Close mobile menu when a link is clicked
+        const navLinks = document.querySelectorAll(".main-nav-link");
+        navLinks.forEach(link => {
+            link.addEventListener("click", function() {
+                headerNav.classList.remove("nav-open");
+            });
+        });
+    </script>
 </body>
 
 </html>
